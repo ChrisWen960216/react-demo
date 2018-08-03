@@ -72,7 +72,6 @@ export default class ImmutableCalculator extends Component {
     const { value } = e.target;
     const $$currentState = this.getCurrentState(flag);
     const $$nextState = $$currentState.setIn(['details', 'value'], value);
-    // console.log($$currentState.getIn(['details', 'value']));
     this.setState({
       [flag]: $$nextState,
     });
